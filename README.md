@@ -23,10 +23,24 @@ touch config.env
 
 Use any code editor to add `JWT_SECRET` and `DATABASE_URL`
 
+```
+JWT_SECRET=YOUR_JWT_SECRET
+DATABASE_URL=postgres://YOUR_DB_CREDENTIALS
+```
+
+### Migrate database schemas
+
+```
+npm run migrate
+```
+
 ### Compile and run
 ```
 npm run prestart
 npm run start
 ```
+
+### Make sure the application is running
+Finally, head to http://localhost:3000/explorer
 
 All contributions are welcome!
