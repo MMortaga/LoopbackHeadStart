@@ -31,12 +31,12 @@ DATABASE_URL=postgres://YOUR_DB_CREDENTIALS
 ### Migrate database schemas
 
 ```
+npm run prestart
 npm run migrate
 ```
 
-### Compile and run
+### Run
 ```
-npm run prestart
 npm run start
 ```
 
