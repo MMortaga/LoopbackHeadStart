@@ -21,10 +21,11 @@ npm i
 touch config.env
 ```
 
-Use any code editor to add `JWT_SECRET` and `DATABASE_URL`
+Use any code editor to add `JWT_SECRET`, `JWT_EXPIRATION_SECONDS`, and `DATABASE_URL`
 
 ```
 JWT_SECRET=YOUR_JWT_SECRET
+JWT_EXPIRATION_SECONDS=31536000
 DATABASE_URL=postgres://YOUR_DB_CREDENTIALS
 ```
 

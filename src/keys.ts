@@ -12,7 +12,7 @@ require('env2')('./config.env');
 
 export namespace TokenServiceConstants {
   export const TOKEN_SECRET_VALUE = process.env.JWT_SECRET || 'r@nd0m$3cr3t';
-  export const TOKEN_EXPIRES_IN_VALUE = '600';
+  export const TOKEN_EXPIRES_IN_VALUE = process.env.JWT_EXPIRATION_SECONDS || '600';
 }
 
 export namespace TokenServiceBindings {
